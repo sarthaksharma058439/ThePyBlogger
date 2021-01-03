@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    tools:context=".PostActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar2"
+        android:indeterminateDrawable="@drawable/cpb_3"
+        android:indeterminateDuration="@android:integer/config_longAnimTime"
+        android:layout_width="match_parent"
+        android:layout_marginTop="400dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/pleasewait2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Please wait we are loading post.."
+        android:visibility="invisible"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/progressbar2"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/retry2"
+        android:text="Retry"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/rec_post"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/rec"/>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/postrecyclerview"
+       android:layout_width="match_parent"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="110dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="50dp"
+       android:layout_height="match_parent">
+
+   </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/postseriesrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="_"
+        android:textColor="@color/colorPrimaryDark"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/black"
+        android:layout_above="@+id/selectpost"/>
+    <TextView
+        android:id="@+id/selectpost"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="@android:color/black"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="Select Post"/>
+    <LinearLayout
+        android:id="@+id/bottonlinearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/f11"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="130dp"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="Swipe"/>
+
+        <ImageView
+            android:id="@+id/f22"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/swipe"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+
+            />
+        <TextView
+            android:id="@+id/f33"
+            android:layout_width="wrap_content"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="for more Post"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/postseries"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:textSize="28dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="NILL"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/postsummary"
+                android:layout_below="@+id/postseries"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NILL"/>
+
+            <TextView
+                android:id="@+id/postcategory"
+                android:layout_below="@+id/postsummary"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="NILL"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

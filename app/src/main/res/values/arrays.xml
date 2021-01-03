@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="harness">
+        <item>Harness</item>
+        <item>the</item>
+        <item>power</item>
+        <item>of</item>
+        <item>Python</item>
+    </string-array>
+</resources>
